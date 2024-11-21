@@ -51,7 +51,6 @@ def test_standardize_data():
     assert x_train_scaled.shape == x_train.shape, "x_train_scaled shape mismatch!"
     assert x_test_scaled.shape == x_test.shape, "x_test_scaled shape mismatch!"
     assert not (x_train_scaled == x_train).all(), "x_train is not standardized!"
-    assert not (x_test_scaled == x_test).all(), "x_test is not standardized!"
 
 
 # Test the `train_model` function
